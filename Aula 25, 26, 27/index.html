@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Exercicios 1,2,3,4</title>
+</head>
+
+<body>
+    <header>
+        <h2>Validar CPF e Telefone && Gerar CPF e Telefones</h2>
+    </header>
+    <section>
+        <div class="container">
+        <div>Digite a placa de um veículo: </div>
+            <input type="text" id="placa" placeholder="Placa"><br>
+            <input type="button" value="Validar" id= 'solta' onclick="placas()" >
+            <textarea id="validarPlaca" cols="30" rows="10"></textarea>
+            <input type="button" value="Limpar" onmouseup="limpar()">
+        </div>
+        
+        <div class="container">
+        <div>Digite CPF: </div>
+            <input type="text" id="CPF" placeholder="CPF" ></br>
+            <input type="button" value="Validar" onclick="cpfss()" >
+            <textarea id="valorCPF" cols="30" rows="10"></textarea>
+            <input type="button" value="Limpar" onmouseup="limpar()">
+        </div>
+        
+
+
+        <div class="container">
+        <div id="numeroAle">Digite quantos números de telefone deseja gerar:</div>
+        <input type="text" name="0" id="numerodeTelefone" placeholder="0"><br>
+            <input type="button" value="Criar" onclick="telefone()" ><br>
+            <textarea id="valortelefone" cols="30" rows="10"></textarea>
+            <input type="button" value="Limpar" onmouseup="limpar()">
+        </div>
+
+        
+
+        
+        <div class="container">
+        <div id="cpfael">Digite quantos CPF's deseja gerar:</div>
+        <input type="text" name="0" id="cpfssss" placeholder="0"><br>
+        <input type="button" value="Criar" onclick="gerarCPF()"> 
+        <textarea  id="ValorCPF" cols="30" rows="10"></textarea>
+        <input type="button" value="Limpar" onmouseup="limpar()">
+        </div>
+
+       
+     
+    </section>
+    <script src="exercicio1.js"></script>
+</body>
+
+</html>

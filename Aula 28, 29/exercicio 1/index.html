@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Exercico 1</title>
+</head>
+
+<body onmousemove="corpo()" onmouseleave="corpinho()">
+    <header>
+        <h1 onmouseenter="mercado()" onmouseout="mercadinho()">Mercadinho do Titio Juca</h1>
+    </header>
+    <div class="content">
+        <p>Escolha ou digite a quantidade de pedidos que deseja fazer:</p>
+        <input type="number" name="" id="qtd">
+    </div>
+    <form>
+
+        <div class="cliente">
+            <h3>Dados dos clientes: </h3>
+            <p>Id do cliente: <input type="text" name="Id" id="id"></p>
+            <p>Nome do cliente: <input type="text" name="" id="nome"></p>
+            <p>Endereço do cliente: <input type="text" name="" id="endereço"></p>
+            <p>Telefone do cliente: <input type="text" name="" id="telefone"></p>
+        </div>
+        <div class="pedidos">
+            <h3>Pedidos:</h3>
+            <p>Número do pedido: <input type="text" name="" id=""></p>
+            <p>Data do pedido: <input type="date" name="" id="data"></p>
+            <p>Valor do pedido <input type="text" name="" id="valor"></p>
+            <p>Descrição do pedido: <input type="text" name="" id="descrição"></p>
+        </div>
+    </form>
+    <div id="senai">&copy;SENAI</div>
+
+    <script>
+        function mercado(){
+            var t = document.querySelector('h1')
+            t.style.color = 'black'
+            t.style.background = 'white'
+        }
+        function mercadinho(){
+            var t = document.querySelector('h1')
+            t.style.color = 'red'
+            t.style.background = ' rgb(245, 153, 153)'
+        }
+        function corpo(){
+            var  b = document.querySelector('body')
+            var t = document.querySelector('h1')
+            b.style.background = 'pink'
+            t.style.color = 'pink'
+        }
+        function corpinho(){
+            var  b = document.querySelector('body')
+            b.style.background = ' rgb(245, 153, 153)'
+        }
+
+
+    </script>
+</body>
+
+</html>

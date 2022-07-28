@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Exercico 2</title>
+</head>
+
+<body onmousemove="corpo()" onmouseleave="corpinho()">
+    <header>
+        <h1 onmouseenter="mercado()" onmouseout="mercadinho()">XPTO Manutenções</h1>
+    </header>
+    <form>
+
+        <div class="cliente">
+            <h3>Dados da Empresa: </h3>
+            <p>Matrícula: <input type="text" name="Id" id="id"></p>
+            <p>Nome: <input type="text" name="" id="nome"></p>
+            <p>Formatação: <input type="text" name="" id="endereço"></p>
+            <p>Telefone:<input type="text" name="" id="telefone"></p>
+        </div>
+        <div class="pedidos">
+            <h3>Viagem:</h3>
+            <p>Origem da Viagem <input type="text" name="" id=""></p>
+            <p>Data do Viagem: <input type="date" name="" id="data"></p>
+            <p>Hora da partida <input type="text" name="" id="valor"></p>
+            <p>Distância em Km:<input type="text" name="" id="descrição"></p>
+            <p>Número da Manutenção: <input type="text" name="" id="man"></p>
+            <p>Hora da chegada: <input type="text" name="" id="chegada"></p>
+            <p>Destino: <input type="text" name="" id="destino"></p>
+        </div>
+    </form>
+    <div id="senai">&copy;SENAI</div>
+
+    <script>
+        function mercado(){
+            var t = document.querySelector('h1')
+            t.style.color = 'black'
+            t.style.background = 'white'
+        }
+        function mercadinho(){
+            var t = document.querySelector('h1')
+            t.style.color = 'red'
+            t.style.background = ' rgb(245, 153, 153)'
+        }
+        function corpo(){
+            var  b = document.querySelector('body')
+            var t = document.querySelector('h1')
+            b.style.background = 'pink'
+            t.style.color = 'pink'
+        }
+        function corpinho(){
+            var  b = document.querySelector('body')
+            b.style.background = ' rgb(245, 153, 153)'
+        }
+
+
+    </script>
+</body>
+
+</html>

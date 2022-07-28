@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Exercico 3</title>
+</head>
+
+<body onmousemove="corpo()" onmouseleave="corpinho()">
+    <header>
+        <h1 onmouseenter="mercado()" onmouseout="mercadinho()">Escola de idiomas: Shakespearing </h1>
+    </header>
+    <form>
+
+        <div class="cliente">
+            <h3>Dados dos Alunos: </h3>
+            <p>Nome do aluno: <input type="text" name="" id="nome"></p>
+            <p>RA dos Alunos: <input type="text" name="Id" id="id"></p>
+            <p>Data Matrícula: <input type="date" name="" id="nome"></p>
+            <p>Data  de nascimento: <input type="date" name="" id="nome"></p>
+            <p>Telefone: <input type="text" name="" id="endereço"></p>
+        </div>
+        <div class="pedidos">
+            <h3>Pedidos:</h3>
+            <p>Id da turma: <input type="text" name="" id="id"></p>
+            <p>Nome do curso: <input type="text" name="" id="data"></p>
+            <p>Idiomas: <input type="text" name="" id="valor"></p>
+            <p>Número da sala: <input type="text" name="" id="descrição"></p>
+        </div>
+    </form>
+    <div id="senai">&copy;SENAI</div>
+
+    <script>
+        function mercado(){
+            var t = document.querySelector('h1')
+            t.style.color = 'black'
+            t.style.background = 'white'
+        }
+        function mercadinho(){
+            var t = document.querySelector('h1')
+            t.style.color = 'red'
+            t.style.background = ' rgb(245, 153, 153)'
+        }
+        function corpo(){
+            var  b = document.querySelector('body')
+            var t = document.querySelector('h1')
+            b.style.background = 'pink'
+            t.style.color = 'pink'
+        }
+        function corpinho(){
+            var  b = document.querySelector('body')
+            b.style.background = ' rgb(245, 153, 153)'
+        }
+
+
+    </script>
+</body>
+
+</html>

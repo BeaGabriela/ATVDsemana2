@@ -111,7 +111,7 @@ var resto2 = (soma * 10) % 11
         for(var j = 0; j<qtd; j++){
           var telefone = Math.floor(Math.random() *  (9999 - 1000 + 1)) + 1000
           var telefone1 = Math.floor(Math.random() *  (9999 - 1000 + 1)) + 1000
-          vtl.innerHTML +=`(${ddd}) ${d} ${telefone}-${telefone1}                      `  
+          vtl.innerHTML +=`(${ddd}) ${d} ${telefone}-${telefone1}\n`  
     }
         }
   
@@ -123,7 +123,7 @@ var resto2 = (soma * 10) % 11
       Tcpf2 = Math.floor(Math.random()* (999 - 100 + 1))+100
       Tcpf3 = Math.floor(Math.random()* (999 - 100 + 1))+100
       var digi = Math.floor(Math.random()*(99 - 10 + 1))+10
-      Vcp.innerHTML += `${Tcpf1}.${Tcpf2}.${Tcpf3}-${digi}` + "       "
+      Vcp.innerHTML += `${Tcpf1}.${Tcpf2}.${Tcpf3}-${digi}` + "\n"
       }
     
 

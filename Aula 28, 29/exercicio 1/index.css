@@ -1,0 +1,52 @@
+body{
+    font: normal 10pt "Times New Roman";
+    background-color: rgb(245, 153, 153);
+}
+
+h1 {
+    color: rgba(240, 4, 4, 0.74);  
+    margin: 10vh 0  0 35vw;
+    width: 30vw;
+    text-align: center;
+    box-shadow: 2px 5px 10px black;
+    font-size: 40px;
+
+}
+
+form{
+    display: flex;
+   flex-direction: row;
+}
+input{
+    width:150px;
+    border-radius: 20px;
+}
+
+.pedidos{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 50vw;
+}
+.cliente{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+}
+
+.content{
+  text-align: center;
+  margin-top: 5vh;
+}
+
+h3{
+    box-shadow: 4px 4px 10px rgb(241, 119, 119);
+    border-radius: 30px;
+}
+#senai{
+    text-align: center;
+    margin-top: 40vh;
+}

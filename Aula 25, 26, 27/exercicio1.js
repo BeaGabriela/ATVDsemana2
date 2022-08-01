@@ -8,6 +8,7 @@
   var vc = document.getElementById('valorCPF')
   var vtl = document.getElementById('valortelefone')
   var Vcp = document.getElementById('ValorCPF')
+  var DDD = document.getElementById('ddd')
 
 
 
@@ -103,10 +104,9 @@ var resto2 = (soma * 10) % 11
   } 
 
 //      //Gerar numeros de telefone alearoerio
-     function telefone(qtd){
+     function telefone(ddd, qtd){
       qtd = NT.value
-      
-    var ddd = 19
+       ddd = DDD.value
     var d = 9
         for(var j = 0; j<qtd; j++){
           var telefone = Math.floor(Math.random() *  (9999 - 1000 + 1)) + 1000

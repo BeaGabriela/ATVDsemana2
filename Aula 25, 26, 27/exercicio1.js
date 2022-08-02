@@ -116,19 +116,44 @@ var resto2 = (soma * 10) % 11
         }
   
    function gerarCPF(QTD){
-   
     QTD = cp.value
-    for(var k = 0; k <QTD; k++){
+         let cpfs = new Array()
+      for(var k = 0; k <QTD; k++){
       Tcpf1 = Math.floor(Math.random()* (999 - 100 + 1))+100
       Tcpf2 = Math.floor(Math.random()* (999 - 100 + 1))+100
       Tcpf3 = Math.floor(Math.random()* (999 - 100 + 1))+100
       var digi = Math.floor(Math.random()*(99 - 10 + 1))+10
       Vcp.innerHTML += `${Tcpf1}.${Tcpf2}.${Tcpf3}-${digi}` + "\n"
       }
+      
+    }
     
 
        
-    }
+    //}
+//     
+//     let temp = Math.floor(Math.random() * 999999999).toString().padStart(9, '0')
+//     let d1 = 0, d2=0
+
+//     for(let i =0; i<9;i++){
+//       d1+= temp[i] * (i+1)
+//       d2+= temp[i] * i
+
+//     } 
+//     d1%=11
+//     if(d1 == 10) d1 =0
+
+// d2+=d1 *9
+// d2%=11
+// if(d2 ==10) d2 =0
+
+// temp += d1 + '' + d2
+// cpfs.push(temp)
+//   }
+
+  //
+   
+  
 
     function limpar(){
       var solta = document.getElementById('solta')

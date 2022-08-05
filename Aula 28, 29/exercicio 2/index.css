@@ -1,10 +1,10 @@
 body{
     font: normal 10pt "Times New Roman";
-    background-color: rgb(245, 153, 153);
+    background-color: rgb(218, 119, 209);
 }
 
 h1 {
-    color: rgba(240, 4, 4, 0.74);  
+    color: rgba(0, 0, 0, 0.74);  
     margin: 10vh 0  0 35vw;
     width: 30vw;
     text-align: center;
@@ -43,7 +43,7 @@ input{
 }
 
 h3{
-    box-shadow: 4px 4px 10px rgb(241, 119, 119);
+    box-shadow: 4px 4px 10px rgb(225, 182, 250);
     border-radius: 30px;
 }
 #senai{
